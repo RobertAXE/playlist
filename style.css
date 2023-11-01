@@ -1,0 +1,73 @@
+/* Сбросим отступы по-умолчанию */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Anonymous Pro", monospace;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.basic-container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.basic-container-head{
+    background-color: #70FF00;
+    text-align: center;
+  }
+
+.track img {
+  width: 300px;
+  height: 300px;
+}
+
+.tracks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px 30px;
+}
+
+.track {
+  /* display: flex; */
+  /* margin-right: 30px; */
+  max-width: 300px;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.author {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.footer__inner{
+    display: flex;
+    background-color: #70FF00;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list{
+    display: flex;
+    gap: 150px;
+}
+
+@media (max-width: 768px) {
+    .tracks {
+        flex-direction: column;
+    }
+}
